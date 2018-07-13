@@ -8,16 +8,16 @@ config.devServer = {
     noInfo: true,
     // inline: true,        //实时刷新页面
     hot: true,              //热更新
-    proxy: {
-        "/api": {
-            target: "http://172.16.8.214:8080",
-            secure: false,
-            changeOrigin: true,
-            pathRewrite: {
-                "^/api": "/"
-            }
-        }
-    }
+    // proxy: {
+    //     "/api": {
+    //         target: "http://172.16.8.214:8080",
+    //         secure: false,
+    //         changeOrigin: true,
+    //         pathRewrite: {
+    //             "^/api": "/"
+    //         }
+    //     }
+    // }
 };
 config.devtool = "#inline-source-map";
 config.plugins = [
