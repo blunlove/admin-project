@@ -8,8 +8,7 @@ module.exports = {
         filename: "build.js"
     },
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.vue$/,
                 loader: "vue-loader",
                 options: {
@@ -36,7 +35,7 @@ module.exports = {
             },
             {
                 test: /\.less$/,
-                loader: ["style-loader", "css-loader", "less-loader"]
+                loader: ["style-loader", "css-loader", "postcss-loader", "less-loader"]
             }
         ]
     },
